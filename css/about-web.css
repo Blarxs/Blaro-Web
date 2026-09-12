@@ -1,0 +1,300 @@
+/* CABECERA */
+
+.article-hero {
+
+  width: min(1100px, calc(100% - 64px));
+
+  margin: 0 auto;
+
+  padding: 150px 0 100px;
+
+}
+
+.article-hero-content {
+
+  max-width: 900px;
+
+}
+
+.article-hero h1 {
+
+  margin: 0;
+
+  font-size: clamp(52px, 7vw, 88px);
+
+  line-height: 0.98;
+
+  letter-spacing: -0.055em;
+
+}
+
+.article-hero h1 em {
+
+  display: block;
+
+  color: var(--violet);
+
+  font-style: normal;
+
+}
+
+.article-intro {
+
+  max-width: 650px;
+
+  margin: 32px 0 0;
+
+  color: var(--muted);
+
+  font-size: 20px;
+
+  line-height: 1.5;
+
+}
+
+
+/* CONTENIDO */
+
+.article-content {
+
+  width: min(900px, calc(100% - 64px));
+
+  margin: 0 auto;
+
+}
+
+
+/* SECCIONES */
+
+.article-section {
+
+  padding: 80px 0;
+
+  border-top: 1px solid #e5e7eb;
+
+}
+
+.article-section h2 {
+
+  margin: 0 0 28px;
+
+  font-size: clamp(32px, 4vw, 48px);
+
+  line-height: 1.05;
+
+  letter-spacing: -0.045em;
+
+}
+
+.article-section p {
+
+  max-width: 720px;
+
+  margin: 0 0 20px;
+
+  color: var(--muted);
+
+  font-size: 18px;
+
+  line-height: 1.7;
+
+}
+
+
+/* APARTADOS */
+
+.article-feature {
+
+  display: grid;
+
+  grid-template-columns: 100px 1fr;
+
+  gap: 40px;
+
+  padding: 90px 0;
+
+  border-top: 1px solid #e5e7eb;
+
+}
+
+.article-feature-number {
+
+  font-size: 14px;
+
+  font-weight: bold;
+
+  color: var(--violet);
+
+}
+
+.article-label {
+
+  margin: 0 0 12px;
+
+  color: var(--violet);
+
+  font-size: 12px;
+
+  font-weight: bold;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.08em;
+
+}
+
+.article-feature h2 {
+
+  margin: 0 0 28px;
+
+  font-size: clamp(34px, 4vw, 52px);
+
+  line-height: 1.05;
+
+  letter-spacing: -0.045em;
+
+}
+
+.article-feature p:not(.article-label) {
+
+  max-width: 720px;
+
+  margin: 0 0 20px;
+
+  color: var(--muted);
+
+  font-size: 18px;
+
+  line-height: 1.7;
+
+}
+
+
+/* FINAL */
+
+.article-ending {
+
+  margin: 60px 0 140px;
+
+  padding: 100px 0;
+
+  border-top: 1px solid #e5e7eb;
+
+  border-bottom: 1px solid #e5e7eb;
+
+}
+
+.article-ending h2 {
+
+  max-width: 800px;
+
+  margin: 0;
+
+  font-size: clamp(42px, 6vw, 70px);
+
+  line-height: 1;
+
+  letter-spacing: -0.055em;
+
+}
+
+.article-ending h2 em {
+
+  display: block;
+
+  color: var(--violet);
+
+  font-style: normal;
+
+}
+
+.article-ending > p:not(.eyebrow):not(.article-final) {
+
+  max-width: 700px;
+
+  margin: 28px 0 0;
+
+  color: var(--muted);
+
+  font-size: 18px;
+
+  line-height: 1.7;
+
+}
+
+.article-final {
+
+  max-width: 760px;
+
+  margin: 60px 0 0;
+
+  font-size: 26px;
+
+  line-height: 1.35;
+
+  letter-spacing: -0.02em;
+
+}
+
+.article-final + .article-final {
+
+  margin-top: 18px;
+
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 700px) {
+
+  .article-hero {
+
+    width: calc(100% - 36px);
+
+    padding: 100px 0 70px;
+
+  }
+
+  .article-content {
+
+    width: calc(100% - 36px);
+
+  }
+
+  .article-feature {
+
+    grid-template-columns: 1fr;
+
+    gap: 16px;
+
+    padding: 70px 0;
+
+  }
+
+  .article-feature-number {
+
+    order: -1;
+
+  }
+
+  .article-section {
+
+    padding: 70px 0;
+
+  }
+
+  .article-ending {
+
+    margin-bottom: 80px;
+
+    padding: 70px 0;
+
+  }
+
+  .article-final {
+
+    font-size: 22px;
+
+  }
+
+}

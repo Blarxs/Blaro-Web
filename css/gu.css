@@ -1,0 +1,110 @@
+ /* PÁGINA INDIVIDUAL GU */
+
+.gu-page {
+  position: relative;
+  z-index: 1;
+  background: white;
+}
+
+
+/* CABECERA */
+
+.gu-header {
+  width: min(1000px, calc(100% - 64px));
+  margin: 0 auto;
+  padding: 150px 0 80px;
+}
+
+.gu-header h1 {
+  max-width: 900px;
+  margin: 0;
+  font-size: clamp(48px, 7vw, 88px);
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+}
+
+.gu-header h1 em {
+  display: block;
+  color: var(--purple);
+  font-style: normal;
+}
+
+.gu-date {
+  margin: 28px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+}
+
+
+/* ARTÍCULO */
+
+.gu-article {
+  width: min(900px, calc(100% - 64px));
+  margin: 0 auto;
+  padding: 0 0 100px;
+}
+
+.gu-article-content {
+  max-width: 760px;
+}
+
+.gu-intro {
+  margin: 0 0 60px;
+  color: var(--deep-blue);
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.gu-article h2 {
+  margin: 60px 0 18px;
+  color: var(--black);
+  font-size: 34px;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+}
+
+.gu-article p {
+  margin: 0 0 24px;
+  color: var(--black);
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+
+/* VOLVER */
+
+.gu-back {
+  width: min(900px, calc(100% - 64px));
+  margin: 0 auto;
+  padding: 0 0 120px;
+}
+
+
+/* MÓVIL */
+
+@media (max-width: 700px) {
+
+  .gu-header {
+    padding: 110px 0 60px;
+  }
+
+  .gu-article,
+  .gu-back {
+    width: min(100% - 40px, 900px);
+  }
+
+  .gu-intro {
+    font-size: 20px;
+  }
+
+  .gu-article h2 {
+    font-size: 30px;
+  }
+
+  .gu-article p {
+    font-size: 16px;
+  }
+
+}
